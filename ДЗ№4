@@ -111,7 +111,8 @@ iteration_count = 0
 for el in cycle(cycling_list):
     print(el)
     iteration_count += 1
-
+ if iteration_count >= max_iterations:
+        break
 7. Реализовать генератор с помощью функции с ключевыми элементами
 слово yield, создающим очередное значение.
 При вызове функции должен создаваться объект-генератор.
