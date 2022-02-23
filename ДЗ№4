@@ -90,18 +90,27 @@ print(multiplication)
 
 
 из  счетчика импорта itertools
+from itertooks import count, cycle
 
-for  from itertools import count
+print("*" * 20, "iterator A")
+start_iterator = 7
 
-for el in count(int(input('Введите стартовое число '))):
-    print(el) # внимание - беконечный цикл!
+for el in count(stsrt_iterator):
+    if el > 10:
+         break
 
-from itertools import cycle
 
-my_list = [True, 'ABC', 123, None]
-for el in cycle(my_list):
     print(el)
+    
+    
+print("*" * 20, "iterator B")
+cycling_list = [4, 9, 16, 17, 32, 45]
+max_iterations = 12
+iteration_count = 0
 
+for el in cycle(cycling_list):
+    print(el)
+    iteration_count += 1
 
 7. Реализовать генератор с помощью функции с ключевыми элементами
 слово yield, создающим очередное значение.
