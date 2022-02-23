@@ -61,10 +61,9 @@ print([x for x in range(20, 241) if x % 20 == 0 or x % 21 == 0])
 в порядке их следования в исходном списке.
 Для выполнения задания обязательно используйте генератор.
 
-
-my_list = [1, 4, 4, 2, 3, 2, 8, 10, 8, 5]
-my_new_list = [el for el in my_list if my_list.count(el) < 2]
-print(my_new_list)
+numbers = [1, 4, 4, 2, 3, 2, 8, 10, 8, 5]
+items = [x for x in numbers if numbers.count(x) == 1]
+print(items)
 
 5. Реализовать формирование списка, используя
 функция range() и возможность генератора.
